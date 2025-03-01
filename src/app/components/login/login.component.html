@@ -15,7 +15,7 @@
                 <div *ngIf="password?.errors?.['required']">Password is required.</div>
             </small>
         </div>
-        <p-button label="Sign In" styleClass="w-full" severity="info"/>
+        <p-button label="Sign In" styleClass="w-full" severity="info" [disabled]="loginForm.invalid"/>
         <div class="mt-2">Not a member? <a [routerLink]="'/register'">Register</a></div>
     </p-card>
 </form>
