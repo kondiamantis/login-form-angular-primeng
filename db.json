@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "ce2f",
+      "fullName": "Konstantinos Diamantis",
+      "email": "kondiamantis@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "061f",
+      "fullName": "taylor murazik",
+      "email": "taylor.murazik@amigoscode.com",
+      "password": "1234"
+    }
+  ]
+}

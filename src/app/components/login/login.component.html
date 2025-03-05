@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm">
+<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
     <p-card header="Login" [style]="{ width: '360px'} ">
         <div class="field">
             <label for="email">Email</label>
@@ -15,7 +15,7 @@
                 <div *ngIf="password?.errors?.['required']">Password is required.</div>
             </small>
         </div>
-        <p-button label="Sign In" styleClass="w-full" severity="info" [disabled]="loginForm.invalid"/>
+        <p-button label="Sign In" type="submit" styleClass="w-full" severity="info" [disabled]="loginForm.invalid"/>
         <div class="mt-2">Not a member? <a [routerLink]="'/register'">Register</a></div>
     </p-card>
 </form>
